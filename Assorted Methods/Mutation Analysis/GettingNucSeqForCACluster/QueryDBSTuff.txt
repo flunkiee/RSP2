@@ -1,0 +1,12 @@
+makeblastdb -in CAchrom3.fasta -dbtype nucl -out nucleotide_db
+
+a lot of stuff was manually renamed to get this to work, original accession was CP157510.1, chromosome 3, this was found through BLASTing the MP cluster through NCBI blast's webserver.	
+
+need to make it a DB first, blast is very annoying!
+
+i manually wrote these to then extract the hit regions as fasta files, theres probably a better way-- however i did not opt to do it.
+
+samtools faidx CAchrom3.fasta Chr3:1666496-1667797 > hit1.fasta
+samtools faidx CAchrom3.fasta Chr3:1673395-1674834 > hit2.fasta
+samtools faidx CAchrom3.fasta Chr3:1669590-1670849 > hit3.fasta
+samtools faidx CAchrom3.fasta Chr3:1670871-1672520 > hit4.fasta

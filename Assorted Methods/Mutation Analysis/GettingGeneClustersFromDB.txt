@@ -1,0 +1,9 @@
+blastn -query CAQuery.fasta -db CAblastDB \
+  -outfmt "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore" \
+  -out CA_hits.tsv
+
+put this output into BEDinator.py
+
+then put bed file from THAT into the following.
+
+bedtools getfasta -fi <COMBINED GENOME FASTA> -bed <BED OUTPUT> -fo <FASTA CLUSTER OUTPUT>

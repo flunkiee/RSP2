@@ -1,0 +1,1 @@
+find */ -name "*.fna" -exec cat {} + > combined_sequences.fasta

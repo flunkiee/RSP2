@@ -1,0 +1,4 @@
+Proteome used for individual proteins.
+UP000037122
+
+Individual genomes saved in the big candidozyma auris genome file.

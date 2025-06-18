@@ -1,0 +1,7 @@
+Klwick. Genome was pre-masked.
+BRAKER3 was used on galaxy webservers, Only the Klactis. proteome was provided and the only option tweaked was the "Fungal Genome?" option being set to true.
+Accessions for genome & proteome respectively:
+
+GCA_030564205.1 kwicker.
+
+ASM251v1 klactis.
