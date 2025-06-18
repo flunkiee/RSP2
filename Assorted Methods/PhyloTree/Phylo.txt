@@ -1,0 +1,3 @@
+i generated one a while back but it sucks, i'll need to make another one of these, check the common barcode region for these species and use then.
+
+blast region > throw into msa (mafft as usual) > throw alignment into IQ-tree 2 or something.
