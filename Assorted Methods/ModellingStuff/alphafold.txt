@@ -1,0 +1,19 @@
+Done with default settings, seed 256 for every model.
+Visualized in PyMol education edition.
+
+FUTURE ME WHEN YOU MAKE THE PYMOL FIGURES FOR THE PAPER PLEASE ADD THE SPECIFIC ACCESSIONS USED IN THE TITLE (i'll probably opt for the klactis ones anyway they're probably the most reliable?)
+klactis.
+
+Q6CSN0 PUL3
+Q6CSN1 PUL4
+Q6CSN2 PUL2 
+Q6CSN3 PUL1
+
+For Metsch. P
+
+A0A4P6XR21 PUL1
+A0A4P6XMD9 PUL2
+A0A4P6XPE4 PUL3
+A0A4P6XQF5 PUL4
+
+i'm going to regenerate everything again anyway since its so quick and it lets me make sure everything is correct :)

@@ -1,0 +1,4 @@
+Docking models generated through HADDOCK web-tool.
+Params are default, binding domains were predcted via p2rank.
+
+Ideally tortion params would be iterated upon but i do not have access to that portion of the tool, which is fine, it's arguably a little complex for what i want to do anyway.

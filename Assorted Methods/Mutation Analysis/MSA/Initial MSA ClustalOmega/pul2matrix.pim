@@ -1,0 +1,12 @@
+#
+#
+#  Percent Identity  Matrix - created by Clustal2.1 
+#
+#
+	PUL2
+     1: Zygoto_mrakii      100.00   55.38   58.24   57.62   47.08   47.71
+     2: Kluy_dobz           55.38  100.00   80.43   77.30   46.03   46.56
+     3: Kluy_lactis         58.24   80.43  100.00   86.11   46.65   49.69
+     4: Kluy_wicker         57.62   77.30   86.11  100.00   47.08   48.75
+     5: Candidozyma_Auris   47.08   46.03   46.65   47.08  100.00   56.78
+     6: Pulcherrima_MP      47.71   46.56   49.69   48.75   56.78  100.00
