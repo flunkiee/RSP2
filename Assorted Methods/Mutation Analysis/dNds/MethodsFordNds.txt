@@ -8,11 +8,4 @@ then put bed file from THAT into the following.
 
 bedtools getfasta -fi <COMBINED GENOME FASTA> -bed <BED OUTPUT> -fo <FASTA CLUSTER OUTPUT>
 
-ok no this is fine i can feed these into EGGnog now
-
-emapper.py --cpu 20 --mp_start_method forkserver --data_dir /dev/shm/ -o out --output_dir /emapper_web_jobs/emapper_jobs/user_data/MM_q921z1t7 --temp_dir /emapper_web_jobs/emapper_jobs/user_data/MM_q921z1t7 --override -m diamond --dmnd_ignore_warnings -i /emapper_web_jobs/emapper_jobs/user_data/MM_q921z1t7/queries.fasta --evalue 0.001 --score 60 --pident 40 --query_cover 20 --subject_cover 20 --itype genome --genepred prodigal --tax_scope auto --target_orthologs all --go_evidence non-electronic --pfam_realign none --report_orthologs --decorate_gff yes --excel > /emapper_web_jobs/emapper_jobs/user_data/MM_q921z1t7/emapper.out 2> /emapper_web_jobs/emapper_jobs/user_data/MM_q921z1t7/emapper.err
-im using the webtool.
-
-and then from there we can start visualizing these clusters.
-
-after this i think we can then look at extracting coding regions and then aligning using codon aware tools.
+You can split the output using the SPLITinator, it generates some kinda weirdly named files, you'll need to rename them. "for f in *.fasta; do mv "$f" "${f//:/_}"; done" in bash should do the trick.
