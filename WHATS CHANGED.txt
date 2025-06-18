@@ -6,3 +6,4 @@ Currently figuring out how to:
 
 Annotate 50 Genome snippets (PUL clusters)
 then actually view them.
+Currently trying to annotate 10 using only the 4 mesch. pul cluster, sourced from the  mp. aff. sample mentioned herein.
