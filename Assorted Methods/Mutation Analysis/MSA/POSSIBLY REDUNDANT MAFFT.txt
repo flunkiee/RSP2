@@ -1,0 +1,2 @@
+mafft --localpair --maxiterate 100 --thread -1 --reorder CA_clusters.fasta > alignedCA.fasta
+FOR dS/dn ANALYSIS.

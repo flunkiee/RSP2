@@ -1,0 +1,7 @@
+whoops did i mess up commits? - no i didnt phew
+
+anyway heres the stuff i need to commit
+
+MAFFT CHANGES - mafft --localpair --maxiterate 100 --thread -1 --reorder CA_clusters.fasta > alignedCA.fasta swapped to l ins i
+
+this file lol!

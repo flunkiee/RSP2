@@ -1,5 +1,0 @@
-obviously theres alot more going on with this, but i cant really show it proprely as attaching a rather sizable file to a git repo isnt smart.
-
-the general idea is that you grab your genomes, cat them into a single fasta, turn it into a database, convert to bedtools and then use the handy BED format to grab all the clusters!!
-
-fancy stuff, i know.
