@@ -17,3 +17,9 @@ i think the BED file has too much padding for MP. seems rather tempramental. i m
 ok right im gonna stop padding the snippets for MP
 
 I reduced the number of MP genomes and im still running into the gene duplicate issue its hitting dupes, this is confusing. ok right we're down to FOUR mp strains, that have the FEWEST scaffolds.
+i gave up with MP for now lol.
+
+anyway im working through CA atm and its going well.
+waiting on MAFFT
+
+i need a SINGLE MP gene cluster, i'll use the aff. one since its in house and reliable. yeah its whole chromosome too right ok

@@ -11,5 +11,9 @@ bedtools getfasta -fi combinedSnip.fasta -bed regions.bed -s -name > extracted_g
 
 this is the stuff i did after i got the sorta-ok gff file to then extract the coding sequences.
 
-we then just throw those extracted genes into mafft to get a protein alignment!
-THEN we can use that with pal2nal to get the results!!!!!!! FINALLY!!
+wait no use translateX instead it translates the nucl for you -- wait possibly i should just mafft i might be losing my marbles.
+
+
+MAFFT SETTINGS
+mafft-qinsi --maxiterate 2 --thread 4 --threadtb 5 --threadit 0 --reorder --kimura 1 input > output
+webtool used
