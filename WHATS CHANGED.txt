@@ -23,3 +23,5 @@ anyway im working through CA atm and its going well.
 waiting on MAFFT
 
 i need a SINGLE MP gene cluster, i'll use the aff. one since its in house and reliable. yeah its whole chromosome too right ok
+
+did a default clustal omega run using the webtool for the pal2nal input

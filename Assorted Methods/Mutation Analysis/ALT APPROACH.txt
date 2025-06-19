@@ -1,0 +1,1 @@
+if you're not stupid you can just grab the target chromasome specifically, you then dont need to bother with the "smaller snippet" step you can just convert the blast output into a bed and a gff, bedAndgff.py is a script that does such a thing.

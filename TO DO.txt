@@ -1,0 +1,7 @@
+MATRIX OF dN/ds
+
+i think i can do it with a bunch of chromosome 3 segments, since the cluster appears there. ive really been doing this in an incredible ineffective fashion havent I.
+I can reuse the query seq. from the prior to find the CDS. another run is good for refining the approach anyway.
+
+before even isolating the gene snippets it is worth noting that this gene cluster is REALLY conserved within species, like the ID is 100% across 29 random species. i had 30 but that strain just didnt turn up im not going to think about that too much!
+need a script that turns blast tsv into BED and GFF im tiredd of juggling scripts.
