@@ -1,0 +1,11 @@
+cat *.fasta > combinedSnip.fasta
+
+
+gotta fix the gff first
+awk 'BEGIN{FS=OFS="\t"} !/^#/ {$1=gensub(/:.*/, "", "g", $1)} 1' annotations.gff > fixed.gff
+
+
+THIS BIT WORKED
+awk 'BEGIN{OFS="\t"} !/^#/ {print $1, $4-1, $5, $9, ".", $7}' fixed.gff > regions.bed
+bedtools getfasta -fi combinedSnip.fasta -bed regions.bed -s -name > extracted_genes.fasta
+

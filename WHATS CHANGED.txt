@@ -7,3 +7,13 @@ Currently figuring out how to:
 Annotate 50 Genome snippets (PUL clusters)
 then actually view them.
 Currently trying to annotate 10 using only the 4 mesch. pul cluster, sourced from the  mp. aff. sample mentioned herein.
+
+ok now i have to do the thing for MP
+got the nucleotide sequence
+im currently trying to remember how to extract the snippets from each genome, i think we just merge them and then do it as one big file.
+cat *.fa *.fasta *.fna > combined_genomes.fa
+bedtools getfasta -fi combined_genomes.fa -bed MP_clusters.bed -fo extracted_sequences.fa
+i think the BED file has too much padding for MP. seems rather tempramental. i might give up getting the snippets since the padded snippets are something i MIGHT need later god this is annoying.
+ok right im gonna stop padding the snippets for MP
+
+I reduced the number of MP genomes and im still running into the gene duplicate issue its hitting dupes, this is confusing. ok right we're down to FOUR mp strains, that have the FEWEST scaffolds.

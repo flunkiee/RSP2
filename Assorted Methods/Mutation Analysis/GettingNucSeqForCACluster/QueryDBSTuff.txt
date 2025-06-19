@@ -2,7 +2,9 @@ makeblastdb -in CAchrom3.fasta -dbtype nucl -out nucleotide_db
 
 a lot of stuff was manually renamed to get this to work, original accession was CP157510.1, chromosome 3, this was found through BLASTing the MP cluster through NCBI blast's webserver.	
 
-need to make it a DB first, blast is very annoying!
+you have to rename the used chromosomes to have short, simple names otherwise bash dislikes it.
+
+need to make it a DB first, blast is very annoying, then use tblasn, pick queries from that.
 
 i manually wrote these to then extract the hit regions as fasta files, theres probably a better way-- however i did not opt to do it.
 

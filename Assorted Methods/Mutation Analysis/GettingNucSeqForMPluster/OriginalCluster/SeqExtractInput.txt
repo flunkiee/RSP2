@@ -1,0 +1,21 @@
+samtools faidx metPsequence.fna JAJMIJ010000392.1:4595-5968 > Pul1.fasta
+samtools faidx metPsequence.fna JAJMIJ010000392.1:2546-3985 > Pul2.fasta
+samtools faidx metPsequence.fna JAJMIJ010000102.1:2-880 > Pul3a.fasta
+samtools faidx metPsequence.fna JAJMIJ010000392.1:1-276 > Pul3b.fasta
+samtools faidx metPsequence.fna JAJMIJ010000392.1:290-1930 > Pul4.fasta
+
+
+you have to rename the used chromosomes to have short, simple names otherwise bash dislikes it.
+
+tblastn -query mpquery1.fasta -db metpdb -out tblastn_results.txt -outfmt 6
+
+
+clean up, pick best for subsequent querying. Coverage is king here.
+
+
+-outfmt 6
+then manually combine into a big fasta and run with BLAST.
+
+makeblastdb > blast > extract nuc hits into fasta > combine.
+
+makeblastdb -in metPsequence.fna -dbtype nucl -out metpdb

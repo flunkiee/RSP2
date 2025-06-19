@@ -1,5 +1,0 @@
-emapper.py --cpu 20 --mp_start_method forkserver --data_dir /dev/shm/ -o out --output_dir /emapper_web_jobs/emapper_jobs/user_data/MM_2msihq3v --temp_dir /emapper_web_jobs/emapper_jobs/user_data/MM_2msihq3v --override -m diamond --dmnd_ignore_warnings -i /emapper_web_jobs/emapper_jobs/user_data/MM_2msihq3v/queries.fasta --evalue 0.001 --score 60 --pident 40 --query_cover 20 --subject_cover 20 --itype metagenome --genepred prodigal --tax_scope auto --target_orthologs all --go_evidence non-electronic --pfam_realign none --report_orthologs --decorate_gff yes --excel > /emapper_web_jobs/emapper_jobs/user_data/MM_2msihq3v/emapper.out 2> /emapper_web_jobs/emapper_jobs/user_data/MM_2msihq3v/emapper.err
-
-using single genome
-
-Original website refuses to work, will try galaxy instead.

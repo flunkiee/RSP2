@@ -1,3 +1,3 @@
 find */ -name "*.fna" -exec cat {} + > combined_sequences.fasta
 
-makeblastdb -in combined_sequences.fasta -dbtype nucl -out nucleotide_db
+makeblastdb -in combined_sequences.fasta -dbtype nucl -out metP_maindb
