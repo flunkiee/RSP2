@@ -4,4 +4,9 @@ admittedly alot of stuff i did early on was useless/alphafold server stuff so it
 
 
 currently i am working on : CA gene cluster mutation stuff!
+make blast db
+blast against db
+convert blast to gff
+???
+finish paper.
 

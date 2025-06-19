@@ -1,0 +1,2 @@
+for some reason i'd been thinking i need to compare the BLAST hits to the genome instead of just like, converting the blast hits to gff.
+lol.

@@ -1,0 +1,10 @@
+default database made, using same approach documented elsewhere in the git.
+
+blastn -query CAQuery.fasta -db SubCAdb \
+  -outfmt "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore" \
+  -out CAsub.tsv
+
+for some reason i'd been thinking i need to compare the BLAST hits to the genome instead of just like, converting the blast hits to gff.
+lol.
+
+python Annotate-inator.py -i CAsub.tsv -o subannot.gff
