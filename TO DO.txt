@@ -5,3 +5,13 @@ I can reuse the query seq. from the prior to find the CDS. another run is good f
 
 before even isolating the gene snippets it is worth noting that this gene cluster is REALLY conserved within species, like the ID is 100% across 29 random species. i had 30 but that strain just didnt turn up im not going to think about that too much!
 need a script that turns blast tsv into BED and GFF im tiredd of juggling scripts.
+
+TRYING PRANK FOR THE CODON AWARE ALIGNMENT!!!!
+
+it would appear for both sets, i didnt check the scaffolds being used.
+i should check the scaffolds for the third run.
+yea im assuming theres some reference bias going on or something this doesnt make sense?
+i think the way to check is looking at the assembler used?
+yeah i have to look at the assembler thats important, some of them ARE ref guided, and its the only way to tell if its NOT from a published paper.
+IT OUTRIGHT STATED IT WAS REFERENCE GUIDED AHHHH
+GRAB GENOMES THAT ARENT REF GUIDED AND DO THE PROCESS AGAIN. SPECIFICALLY CHROM 3 YOU KNOW THE DRILL
