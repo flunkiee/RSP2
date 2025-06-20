@@ -15,3 +15,4 @@ i think the way to check is looking at the assembler used?
 yeah i have to look at the assembler thats important, some of them ARE ref guided, and its the only way to tell if its NOT from a published paper.
 IT OUTRIGHT STATED IT WAS REFERENCE GUIDED AHHHH
 GRAB GENOMES THAT ARENT REF GUIDED AND DO THE PROCESS AGAIN. SPECIFICALLY CHROM 3 YOU KNOW THE DRILL
+NO BUT WHY ARE THESE REGIONS ALWAYS THE SAME WHAT
