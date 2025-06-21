@@ -2,7 +2,8 @@ makeblastdb -in Chromosome3.fasta -dbtype nucl -out caChrom3db
 
 blastn -query CAQuery.fasta -db caChrom3db \
   -outfmt "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore" \
-  -out caChrom3_hits.tsv
+  -out caChrom3_hits.tsv \
+  -perc_identity 50?
 
 bedAndgff.py
 

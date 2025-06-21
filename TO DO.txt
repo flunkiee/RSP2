@@ -16,3 +16,8 @@ yeah i have to look at the assembler thats important, some of them ARE ref guide
 IT OUTRIGHT STATED IT WAS REFERENCE GUIDED AHHHH
 GRAB GENOMES THAT ARENT REF GUIDED AND DO THE PROCESS AGAIN. SPECIFICALLY CHROM 3 YOU KNOW THE DRILL
 NO BUT WHY ARE THESE REGIONS ALWAYS THE SAME WHAT
+
+might be able to skip genome selection by learning how to use the NCBI blast website correctly, i THINK i can blast against the entire nucleotide db as opposed to only refseq. and then selecting the chroms that ARENT 100% matches.
+
+
+currently trying tblastn to get the regions instead of the nucleotide query, also had to adjust the input since i forgot about stand directions!

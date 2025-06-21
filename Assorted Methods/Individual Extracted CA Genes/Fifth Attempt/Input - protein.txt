@@ -1,0 +1,33 @@
+makeblastdb -in Chromosome3.fasta -dbtype nucl -out caChrom3db
+
+tblastn -query ProteinCAClust.fasta -db caChrom3db \
+  -outfmt "6 qseqid sseqid pident length qstart qend sstart send evalue bitscore" \
+  -out caChrom3_hits.tsv 
+
+??  
+awk -F'\t' '$3 >= 75' caChrom3_hits.tsv > caChrom3_hits_75.tsv
+
+??
+
+bedAndgff.py
+
+sed '/^>/ s/ .*//' Chromosome3.fasta > trimmedC3.fasta
+ trim headers
+
+split into pul1234 and THEN
+
+awk '$4 ~ /PUL1\|/' output.bed > PUL1_regions.bed
+awk '$4 ~ /PUL2\|/' output.bed > PUL2_regions.bed
+awk '$4 ~ /PUL3\|/' output.bed > PUL3_regions.bed
+awk '$4 ~ /PUL4\|/' output.bed > PUL4_regions.bed
+
+bedtools getfasta -fi trimmedC3.fasta -bed PUL1_regions.bed -fo PUL1_sequences.fa -s
+bedtools getfasta -fi trimmedC3.fasta -bed PUL2_regions.bed -fo PUL2_sequences.fa -s
+bedtools getfasta -fi trimmedC3.fasta -bed PUL3_regions.bed -fo PUL3_sequences.fa -s
+bedtools getfasta -fi trimmedC3.fasta -bed PUL4_regions.bed -fo PUL4_sequences.fa -s
+
+works perfectly.
+excellent!
+it actually does work perfectly wow good job past me nice pipeline!
+
+TRANSLATE (FIX USING GENEWISE) > MAFFT ALIGN > PAL2NAL
