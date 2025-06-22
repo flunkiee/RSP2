@@ -26,8 +26,14 @@ bedtools getfasta -fi trimmedC3.fasta -bed PUL2_regions.bed -fo PUL2_sequences.f
 bedtools getfasta -fi trimmedC3.fasta -bed PUL3_regions.bed -fo PUL3_sequences.fa -s
 bedtools getfasta -fi trimmedC3.fasta -bed PUL4_regions.bed -fo PUL4_sequences.fa -s
 
-works perfectly.
-excellent!
-it actually does work perfectly wow good job past me nice pipeline!
+all into PAL2NAL/TranslatorX > then into newsyn.py
 
-TRANSLATE (FIX USING GENEWISE) > MAFFT ALIGN > PAL2NAL
+might replace the last step with manual processing in MEGA12.
+mega params
+>muscle codon alignment
+
+>bootstrap method 1000
+>sys-non synonymous
+>n-s
+
+data into scatter plots.
