@@ -1,0 +1,13 @@
+bwa index B8441chrom3.fasta
+bwa mem B8441chrom3.fasta PUL1_sequences.fa > PUL1.sam 
+samtools view -Sb PUL1.sam > PUL1.bam
+samtools sort PUL1.bam -o PUL1sorted.bam
+samtools index PUL1sortedi.bam
+samtools index PUL1sorted.bam
+
+bcftools mpileup -Ou -f B8441chrom3.fasta  PUL1sorted.bam
+
+
+
+what do i need to do:
+merge the codon alignments > split into by species > align to ref > variant call.

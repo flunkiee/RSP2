@@ -1,0 +1,12 @@
+ minimap2 -d ref.mmi RefCM076440.1.fasta
+
+minimap2 -a ref.mmi CP043444.1.fasta > CP043441.sam
+
+mkdir -p bam_files_sorted && for sam in samfiles/*.sam; do s=$(basename "$sam" .sam); samtools view -bS "$sam" | samtools sort -o "bam_files_sorted/${s}.sorted.bam" && samtools index "bam_files_sorted/${s}.sorted.bam"; done
+samtools faidx RefCM076440.1.fasta
+
+bcftools mpileup -Ou -f RefCM076440.1.fasta bam_files_sorted/*.sorted.bam | bcftools call -mv -Oz -o variants.vcf.gz
+
+bcftools index variants.vcf.gz
+
+gunzip -c variants.vcf.gz > variants.vcf

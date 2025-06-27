@@ -1,0 +1,11 @@
+for f in *.gtf; do
+  awk 'BEGIN{OFS="\t"} {$1 = gensub(/_.*/, "", "g", $1); print}' "$f" > "C$f"
+done
+
+
+for file in *.fasta; do
+  sed -i 's/^\(>[^ ]*\).*/\1/' "$file"
+done
+
+
+##thank god for awk

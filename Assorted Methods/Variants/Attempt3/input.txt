@@ -1,0 +1,43 @@
+cat *fas > Combined.fasta
+
+awk '/^>/{split($1, a, ":"); out=a[1]".fasta"} {print >> out}' combined.fasta
+
+minimap2 -d ref.mmi B8441chrom3.fasta
+
+minimap2 -a ref.mmi CM076440.1.fasta > CM076440.1.sam
+
+minimap2 -a ref.mmi CP050675.1.fasta > CP050675.1.sam
+
+minimap2 -a ref.mmi CP126635.2.fasta > CP126635.2.sam
+
+minimap2 -a ref.mmi CP132588.1.fasta > CP132588.1.sam
+
+
+
+samtools view -bS species1.sam | samtools sort -o species1.sorted.bam
+samtools index species1.sorted.bam
+
+
+nevermind 
+
+
+for s in CM076440.1 CP050675.1 CP126635.2 CP132588.1; do minimap2 -a ref.mmi ${s}.fasta | samtools view -bS - | samtools sort -o ${s}.sorted.bam; done
+
+for s in CM076440.1 CP050675.1 CP126635.2 CP132588.1; do samtools index ${s}.sorted.bam; done
+
+for s in CM076440.1 CP050675.1 CP126635.2 CP132588.1; do bcftools mpileup -f B8441chrom3.fasta ${s}.sorted.bam | bcftools call -mv --ploidy 1 -Oz -o ${s}.vcf.gz; done
+
+for s in CM076440.1 CP050675.1 CP126635.2 CP132588.1; do bcftools index ${s}.vcf.gz; done
+
+
+bcftools merge -Oz -o combined.vcf.gz CM076440.1.vcf.gz CP050675.1.vcf.gz CP126635.2.vcf.gz CP132588.1.vcf.gz
+
+
+for s in CM076440.1 CP050675.1 CP126635.2 CP132588.1; do
+  gunzip -c ${s}.vcf.gz > ${s}.vcf
+done
+
+CM076440.1
+CP050675.1
+CP126635.2
+CP132588.1

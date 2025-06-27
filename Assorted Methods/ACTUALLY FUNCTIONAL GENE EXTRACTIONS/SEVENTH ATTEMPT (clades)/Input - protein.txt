@@ -42,3 +42,9 @@ excellent!
 it actually does work perfectly wow good job past me nice pipeline!
 
 TRANSLATE (FIX USING GENEWISE) > MAFFT ALIGN > PAL2NAL
+
+
+I NEED TO SPLIT BY SPECIES FOR VARIANT CALLING.
+
+awk '{print > $1".bed"}' output.bed
+

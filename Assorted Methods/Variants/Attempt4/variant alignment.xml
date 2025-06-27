@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt3\B8441chrom3.fasta" locus="CM076440.1:1665298-1677972" version="8">
+    <Resources>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP050675.1_Candidozyma_auris_isolate_IFRC2087_chromosome_3.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP126635.2_Candidozyma_auris_strain_B11221_chromosome_3.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP132588.1_Candidozyma_auris_strain_F3485_chromosome_3.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP043533.1_Candidozyma_auris_strain_B11220_chromosome_3.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP043444.1_Candidozyma_auris_strain_B11245_chromosome_3.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CM076440.1_[Candida]_auris_strain_B8441_chromosome_3,_whole_genome_shotgun_sequence.vcf" type="vcf"/>
+        <Resource path="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\output.gff" type="gff"/>
+    </Resources>
+    <Panel height="510" name="DataPanel" width="1517">
+        <Track attributeKey="CM076440.1_[Candida]_auris_strain_B8441_chromosome_3,_whole_genome_shotgun_sequence.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CM076440.1_[Candida]_auris_strain_B8441_chromosome_3,_whole_genome_shotgun_sequence.vcf" name="CM076440.1_[Candida]_auris_strain_B8441_chromosome_3,_whole_genome_shotgun_sequence.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+        <Track attributeKey="CP043444.1_Candidozyma_auris_strain_B11245_chromosome_3.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP043444.1_Candidozyma_auris_strain_B11245_chromosome_3.vcf" name="CP043444.1_Candidozyma_auris_strain_B11245_chromosome_3.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+        <Track attributeKey="CP043533.1_Candidozyma_auris_strain_B11220_chromosome_3.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP043533.1_Candidozyma_auris_strain_B11220_chromosome_3.vcf" name="CP043533.1_Candidozyma_auris_strain_B11220_chromosome_3.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+        <Track attributeKey="CP050675.1_Candidozyma_auris_isolate_IFRC2087_chromosome_3.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP050675.1_Candidozyma_auris_isolate_IFRC2087_chromosome_3.vcf" name="CP050675.1_Candidozyma_auris_isolate_IFRC2087_chromosome_3.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+        <Track attributeKey="CP126635.2_Candidozyma_auris_strain_B11221_chromosome_3.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP126635.2_Candidozyma_auris_strain_B11221_chromosome_3.vcf" name="CP126635.2_Candidozyma_auris_strain_B11221_chromosome_3.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+        <Track attributeKey="CP132588.1_Candidozyma_auris_strain_F3485_chromosome_3.vcf" clazz="org.broad.igv.variant.VariantTrack" displayMode="EXPANDED" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\CP132588.1_Candidozyma_auris_strain_F3485_chromosome_3.vcf" name="CP132588.1_Candidozyma_auris_strain_F3485_chromosome_3.vcf" siteColorMode="ALLELE_FREQUENCY" visible="true"/>
+    </Panel>
+    <Panel height="81" name="FeaturePanel" width="1517">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="+" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="output.gff" clazz="org.broad.igv.track.FeatureTrack" fontSize="10" groupByStrand="false" id="C:\Users\conqu\Desktop\MastersGit\Assorted Methods\Variants\Attempt4\output.gff" name="output.gff" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.8561872909698997"/>
+    <Regions>
+        <Region chromosome="CM076440.1" end="1675275" start="1666750"/>
+    </Regions>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

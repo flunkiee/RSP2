@@ -1,0 +1,5 @@
+vcftools --vcf CM076440.1.vcf --TsTv-summary
+vcftools --vcf CP050675.1.vcf --TsTv-summary
+vcftools --vcf CP126635.2.vcf --TsTv-summary
+vcftools --vcf CP132588.1.vcf --TsTv-summary
+

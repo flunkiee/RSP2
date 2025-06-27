@@ -1,0 +1,25 @@
+awk '/^>/ {if (seq) close(file); file=substr($0,2) ".fasta"; gsub(/[ \/]/,"_",file); print $0 > file; seq=1; next} {print $0 > file}' chromosome3.fa
+
+samtools faidx b8441chrom3.fasta
+
+for query in *.fasta; do
+  if [[ "$query" != "b8441chrom3.fasta" ]]; then
+    # process query FASTA only if it is NOT the reference
+    base=$(basename "$query" .fasta)
+
+    minimap2 -a -x asm5 b8441chrom3.fasta "$query" > "${base}.sam"
+
+    samtools view -bS "${base}.sam" | samtools sort -o "${base}.sorted.bam"
+    samtools index "${base}.sorted.bam"
+
+    bcftools mpileup -f b8441chrom3.fasta "${base}.sorted.bam" | \
+      bcftools call -mv -Oz -o "${base}.vcf.gz"
+
+    tabix "${base}.vcf.gz"
+  fi
+done
+
+for f in *.gz; do
+  gunzip -c "$f" > "${f%.gz}"
+done
+
