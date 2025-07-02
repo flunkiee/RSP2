@@ -1,0 +1,1 @@
+awk '/^>/ {if (seq) close(file); file=substr($0,2) ".fasta"; gsub(/[ \/]/,"_",file); print $0 > file; seq=1; next} {print $0 > file}' chromosome3.fa
