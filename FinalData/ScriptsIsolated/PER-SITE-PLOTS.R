@@ -8,7 +8,7 @@ library(cowplot)
 file_paths <- tk_choose.files(caption = "Select one or more CSV files")
 if (length(file_paths) == 0) stop("No files selected.")
 
-# Define consistent fill categories and colors
+
 fill_levels <- c(
   "Significant Positive (α > β)",
   "Insignificant Positive",
@@ -23,7 +23,6 @@ fill_colors <- c(
   "Significant Negative (β > α)" = "firebrick"
 )
 
-# Create individual plots
 plots <- lapply(file_paths, function(file_path) {
   df <- read_csv(file_path, col_types = cols())
   
@@ -66,7 +65,7 @@ plots <- lapply(file_paths, function(file_path) {
     )
 })
 
-# Create legend grob wrapped in patchwork element
+
 legend_plot <- ggplot(data.frame(x = 1:4, y = 1, 
                                  Fill = factor(fill_levels, levels = fill_levels)),
                       aes(x, y, fill = Fill)) +
@@ -84,11 +83,9 @@ legend_plot <- ggplot(data.frame(x = 1:4, y = 1,
 shared_legend <- get_legend(legend_plot)
 legend_wrapped <- wrap_elements(full = shared_legend)
 
-# Arrange plots vertically with nrow = number of files
 n_files <- length(file_paths)
 combined_plots <- wrap_plots(plots, ncol = 1, nrow = n_files+1)
 
-# Final layout: plots stacked vertically / legend below with controlled heights
 final_plot <- combined_plots / legend_wrapped + 
   plot_layout(heights = c(rep(1, n_files), 0.15))
 
